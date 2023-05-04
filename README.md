@@ -1,5 +1,5 @@
 # Your Project's Title...
-Your project's description...
+Franklin implementation of https://summit-emea.adobe.com/emea/
 
 ## Environments
 - Preview: https://main--{repo}--{owner}.hlx.page/

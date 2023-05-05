@@ -1,7 +1,7 @@
 # Adobe Summit / EMEA edition
 Franklin implementation of https://summit-emea.adobe.com/emea/
 
-**Please Note**:  This repository is for educational/training purposes. Note that if you are not part of the training your comments/PRs will be ignored.
+**Please Note**: This repository is for educational/training purposes. Note that if you are not part of the training your comments/PRs will be ignored.
 
 ## Environments
 - Preview: https://main--summit-emea--adobe-basel.hlx.page/

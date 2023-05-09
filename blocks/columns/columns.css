@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.columns-text-col {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 .columns img {
   width: 100%;
 }
@@ -17,6 +22,10 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+}
+
+.pod-title {
+    font-size: 1.75rem;
 }
 
 @media (min-width: 900px) {

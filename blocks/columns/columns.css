@@ -1,10 +1,12 @@
 .columns > div {
   display: flex;
-  padding-left: 70px;
-  padding-right: 70px;
   flex-direction: column;
 }
 
+.columns > div > div > p {
+    padding-left: 70px;
+    padding-right: 70px;
+}
 .columns img {
   width: 100%;
 }

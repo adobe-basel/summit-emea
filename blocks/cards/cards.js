@@ -7,8 +7,19 @@ export default function decorate(block) {
     const li = document.createElement('li');
     li.innerHTML = row.innerHTML;
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) {
+        div.className = 'cards-card-image';
+        if (block.className.match('.featured')) {
+          const left = document.createElement('div');
+          const bottom = document.createElement('div');
+          left.className = 'cards-card-featured-border-left';
+          bottom.className = 'cards-card-featured-border-bottom';
+          div.prepend(bottom);
+          div.prepend(left);
+        }
+      } else {
+        div.className = 'cards-card-body';
+      }
     });
     ul.append(li);
   });

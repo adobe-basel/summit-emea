@@ -16,6 +16,7 @@ export default function decorate(block) {
         const p = col.querySelector("p");
         const h2 = document.createElement("h2");
         h2.textContent = p.textContent;
+        h2.setAttribute("class", "pod-title");
         p.replaceWith(h2);
       }
     });

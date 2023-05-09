@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
- :root {
+:root {
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -20,7 +20,7 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: adobe-clean, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -81,12 +81,29 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
-h6 { font-size: var(--heading-font-size-xs) }
+h1 {
+  font-size: var(--heading-font-size-xxl)
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl)
+}
+
+h3 {
+  font-size: var(--heading-font-size-l)
+}
+
+h4 {
+  font-size: var(--heading-font-size-m)
+}
+
+h5 {
+  font-size: var(--heading-font-size-s)
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs)
+}
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
@@ -152,7 +169,7 @@ a.button:any-link, button {
   border-radius: 30px;
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
+a.button:hover, a.button:focus, button:hover, button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
 }

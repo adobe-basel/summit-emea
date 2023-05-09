@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.columns > div > div > p {
+.columns-text-col {
     padding-left: 70px;
     padding-right: 70px;
 }

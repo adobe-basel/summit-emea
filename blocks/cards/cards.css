@@ -30,6 +30,10 @@
   object-fit: cover;
 }
 
+.cards-container {
+  background: #000;
+}
+
 .cards-container h2 {
   font-size: 20px;
   line-height: 25px;

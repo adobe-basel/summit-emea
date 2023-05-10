@@ -29,10 +29,16 @@
 }
 
 .quote > div > div:nth-child(1) {
+    /* blue gradient */
     background-image: url(https://summit-emea.adobe.com/assets/b9fa3003c62ccedfac8c.png);
 }
 
 .quote > div > div:nth-child(2) {
+    /* virtual reality */
+    background-image: url(https://summit-emea.adobe.com/assets/53c7abd1f55f58092b36.jpg);
+}
+.quote > div > div:nth-child(3) {
+    /* green gradient */
     background-image: 
             url(https://summit-emea.adobe.com/assets/7f5f1c2f5fb926e9bace.png),
             url(https://summit-emea.adobe.com/assets/c624f80da0274faee6d9.png);

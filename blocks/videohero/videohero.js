@@ -2,9 +2,18 @@ export default async function decorate(block) {
     const blockWrapper = block.parentElement;
     const blockContainer = blockWrapper.parentElement;
 
-    const videUrl = blockContainer.getAttribute("data-videourl");
+    const videoUrl = blockContainer.getAttribute("data-videourl");
     const startAndLocation = blockContainer.getAttribute("data-startdateandlocation");
 
-    const section = document.createElement('div');
+    const divVdeo = document.createElement('div');
+    divVdeo.innerHTML = `
+    <video class="home-video-banner" autoplay="" loop="" muted="">
+        <source src="${videoUrl}" type="video/mp4">
+    </video>
+    `;
 
+    const divRow = block.querySelector(':scope > div ');
+    const divContent = divRow.querySelector(':scope > div');
+    divContent.classList.add("heroContent");
+    divRow.append(divVdeo);
 }

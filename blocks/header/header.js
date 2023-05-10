@@ -127,7 +127,7 @@ export default async function decorate(block) {
     if (navTools) {
       const button = navTools.querySelector('a');
       if (button) {
-        button.classList='button primary';
+        button.classList = 'button primary';
       }
     }
 

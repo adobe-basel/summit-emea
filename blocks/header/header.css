@@ -161,10 +161,6 @@ header nav .nav-sections {
   background-color: var(--overlay-color);
 }
 
-/*header nav .nav-sections:hover {*/
-/*  border-bottom: 1px solid red;*/
-/*}*/
-
 header nav[aria-expanded="true"] .nav-sections {
   display: block;
   visibility: visible;

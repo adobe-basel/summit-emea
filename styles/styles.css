@@ -244,6 +244,14 @@ main .section {
   padding: 64px 16px;
 }
 
+main div.section:first-of-type {
+  background-color: black;
+}
+
+main div.section:first-of-type h1, p {
+ color: white;
+}
+
 @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;

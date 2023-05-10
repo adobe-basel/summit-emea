@@ -36,6 +36,8 @@
     background: 
             url(https://summit-emea.adobe.com/assets/7f5f1c2f5fb926e9bace.png),
             url(https://summit-emea.adobe.com/assets/c624f80da0274faee6d9.png);
+    background-position: top right;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 900px) {

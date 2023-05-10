@@ -123,6 +123,14 @@ export default async function decorate(block) {
       });
     }
 
+    const navTools = nav.querySelector('.nav-tools');
+    if (navTools) {
+      const button = navTools.querySelector('a');
+      if (button) {
+        button.classList='button primary';
+      }
+    }
+
     // hamburger for mobile
     const hamburger = document.createElement('div');
     hamburger.classList.add('nav-hamburger');

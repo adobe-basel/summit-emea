@@ -13,7 +13,7 @@ header nav {
     'hamburger brand tools' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
-  gap: 0 2em;
+  gap: 0 1em;
   margin: auto;
   max-width: 1264px;
   height: var(--nav-height);
@@ -32,7 +32,7 @@ header nav[aria-expanded="true"] {
 
 @media (min-width: 600px) {
   header nav {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
 
@@ -161,6 +161,10 @@ header nav .nav-sections {
   background-color: var(--overlay-color);
 }
 
+/*header nav .nav-sections:hover {*/
+/*  border-bottom: 1px solid red;*/
+/*}*/
+
 header nav[aria-expanded="true"] .nav-sections {
   display: block;
   visibility: visible;
@@ -172,6 +176,7 @@ header nav .nav-sections ul  {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  color: #2c2c2c;
 }
 
 header nav .nav-sections ul > li {
@@ -239,6 +244,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections > ul > li > ul {
     display: none;
     position: relative;
+    color: #2c2c2c;
   }
 
   header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
@@ -248,20 +254,8 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 12px;
     padding: 1em;
-    background-color: var(--highlight-background-color);
+    background-color: #fafafa;
     white-space: initial;
-  }
-
-  header nav .nav-sections > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--highlight-background-color);
   }
 
   header nav .nav-sections > ul > li > ul > li {
@@ -272,4 +266,24 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header nav .nav-tools p {
+  color: #2c2c2c;
+  font-size: var(--body-font-size-xs);
+}
+
+header nav .nav-tools p a.button {
+  background: #0265dc;
+  margin: 0 22px;
+  padding: 5px 14px 6px;
+}
+
+header nav .nav-tools p a.button:hover {
+  background: #0054b6;
+  border: 2px solid #0054b6;
 }

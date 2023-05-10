@@ -14,10 +14,10 @@
   /* colors */
   --link-color: #72b7f9;
   --link-hover-color: #72b7f9;
-  --background-color: #000;
+  --background-color: #f5f5f5;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #fff;
+  --text-color: #2c2c2c;
 
   /* fonts */
   --body-font-family: adobe-clean, sans-serif;
@@ -140,7 +140,7 @@ main pre {
 
 a:any-link {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {

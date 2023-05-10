@@ -28,11 +28,11 @@
     font-size: 1.75rem;
 }
 
-.quote > div > div:nth-child(0) {
+.quote > div > div:nth-child(1) {
     background: url(https://summit-emea.adobe.com/assets/b9fa3003c62ccedfac8c.png);
 }
 
-.quote > div > div:nth-child(1) {
+.quote > div > div:nth-child(2) {
     background: 
             url(https://summit-emea.adobe.com/assets/7f5f1c2f5fb926e9bace.png),
             url(https://summit-emea.adobe.com/assets/c624f80da0274faee6d9.png);

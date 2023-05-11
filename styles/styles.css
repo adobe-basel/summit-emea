@@ -244,15 +244,15 @@ main .section {
   padding: 64px 16px;
 }
 
-main div.section[data-bgcolor=black] {
+main div.section[data-bgcolor='black'] {
   background-color: black;
 }
 
-main div.section[data-fgcolor=white] h1, h2, p {
+main div.section[data-fgcolor='white'] h1, h2, p {
   color: white;
 }
 
-main div.section[data-fgcolor=white] p u {
+main div.section[data-fgcolor='white'] p u {
   color: red;
 }
 

@@ -12,6 +12,8 @@ export default async function decorate(block) {
     </video>
     `;
 
+    divVdeo.classList.add("heroVideo");
+
     const divRow = block.querySelector(':scope > div ');
     const divContent = divRow.querySelector(':scope > div');
     divContent.classList.add("heroContent");

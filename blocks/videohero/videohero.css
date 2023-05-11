@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .videohero video {
   position: absolute;
   left: 45%;
@@ -15,9 +16,8 @@
   overflow: hidden;
 }
 
-
 @media (min-width: 900px) {
-  .videohero .heroContent {
+  .videohero .hero-content {
     max-width: 485px;
   }
 }

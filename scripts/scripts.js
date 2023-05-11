@@ -34,8 +34,8 @@ function buildVideoHeroBlock(main) {
   const h1 = main.querySelector('h1');
   const section = h1.parentElement;
   const heroContent = section.querySelectorAll(':scope > p');
-  [...heroContent].forEach(p => p.remove());
-  const block = buildBlock('videohero', { elems: [ h1, ...heroContent ] });
+  [...heroContent].forEach((p) => { p.remove(); });
+  const block = buildBlock('videohero', { elems: [h1, ...heroContent] });
   section.prepend(block);
 }
 

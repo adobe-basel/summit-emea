@@ -277,3 +277,34 @@ main div.section[data-fgcolor='white'] p u {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+main .section.godeep .default-content-wrapper h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+main .section.godeep .default-content-wrapper p {
+  font-size: 18px;
+  text-align: center;
+}
+
+main .section.godeep .default-content-wrapper .button-container a {
+  background-color: white;
+  color: #222;
+  border-radius: 30px;
+  border: 2px solid;
+}
+
+main .section.godeep .default-content-wrapper .button-container a:hover {
+  background-color: #ccc;
+}
+
+main .section.godeep .default-content-wrapper {
+  background-color: #fff;
+  padding-top: 20px;
+  margin-top: -64px;
+}
+
+main .section.godeep .default-content-wrapper p picture img {
+   width: 1150px;
+ }

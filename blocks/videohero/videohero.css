@@ -22,3 +22,11 @@
   }
 }
 
+@media (max-width: 900px) {
+  .hero-video > video {
+    position: unset;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+

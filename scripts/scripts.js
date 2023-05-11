@@ -33,9 +33,11 @@ function buildHeroBlock(main) {
 function buildVideoHeroBlock(main) {
   const h1 = main.querySelector('h1');
   const section = h1.parentElement;
-  const heroContent = section.querySelectorAll(':scope > p');
+
+  // move everything that is not already a block to its own block
+  const heroContent = section.querySelectorAll(':scope > :not(div)');
   [...heroContent].forEach((p) => { p.remove(); });
-  const block = buildBlock('videohero', { elems: [h1, ...heroContent] });
+  const block = buildBlock('videohero', { elems: [...heroContent] });
   section.prepend(block);
 }
 

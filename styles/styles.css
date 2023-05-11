@@ -244,6 +244,18 @@ main .section {
   padding: 64px 16px;
 }
 
+main div.section[data-bgcolor='black'] {
+  background-color: black;
+}
+
+main div.section[data-fgcolor='white'] h1, h2, p {
+  color: white;
+}
+
+main div.section[data-fgcolor='white'] p u {
+  color: red;
+}
+
 @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;

@@ -30,6 +30,17 @@ function buildHeroBlock(main) {
   }
 }
 
+function buildVideoHeroBlock(main) {
+  const h1 = main.querySelector('h1');
+  const section = h1.parentElement;
+
+  // move everything that is not already a block to its own block
+  const heroContent = section.querySelectorAll(':scope > :not(div)');
+  [...heroContent].forEach((p) => { p.remove(); });
+  const block = buildBlock('videohero', { elems: [...heroContent] });
+  section.prepend(block);
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -37,6 +48,7 @@ function buildHeroBlock(main) {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    buildVideoHeroBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);

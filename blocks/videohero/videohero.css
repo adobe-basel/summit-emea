@@ -1,0 +1,24 @@
+/* block specific CSS goes here */
+
+
+.videohero-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.videohero video {
+  position: absolute;
+  left: 45%;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  height: 585px;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .videohero .hero-content {
+    max-width: 485px;
+  }
+}
+

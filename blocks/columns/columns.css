@@ -40,3 +40,8 @@
     order: unset;
   }
 }
+
+.columns.godeep  {
+  background-color: white;
+  margin-top: -18px;
+}

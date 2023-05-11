@@ -1,6 +1,10 @@
 /* block specific CSS goes here */
 
 
+.videohero-container {
+  position: relative;
+  overflow: hidden;
+}
 .videohero video {
   position: absolute;
   left: 45%;

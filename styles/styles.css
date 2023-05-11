@@ -244,12 +244,16 @@ main .section {
   padding: 64px 16px;
 }
 
-main div.section:first-of-type {
+main div.section[data-bgcolor=black] {
   background-color: black;
 }
 
-main div.section:first-of-type h1, p {
- color: white;
+main div.section[data-fgcolor=white] h1, h2, p {
+  color: white;
+}
+
+main div.section[data-fgcolor=white] p u {
+  color: red;
 }
 
 @media (min-width: 600px) {

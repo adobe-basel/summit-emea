@@ -130,6 +130,10 @@ pre {
   overflow: scroll;
 }
 
+main {
+  overflow: hidden;
+}
+
 main pre {
   background-color: var(--overlay-background-color);
   padding: 1em;

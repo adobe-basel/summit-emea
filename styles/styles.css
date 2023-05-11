@@ -248,7 +248,7 @@ main div.section[data-bgcolor='black'] {
   background-color: black;
 }
 
-main div.section[data-fgcolor='white'] h1, h2, p {
+main div.section[data-fgcolor='white'] h1, main div.section[data-fgcolor='white'] h2, main div.section[data-fgcolor='white'] p {
   color: white;
 }
 

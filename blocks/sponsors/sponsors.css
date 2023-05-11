@@ -1,0 +1,112 @@
+.section.sponsors-container {
+    background-color: #f5f5f5;
+    padding: 144px 0 128px;
+}
+
+.sponsors-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.sponsors {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.sponsors h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.015em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.sponsors div  {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media(min-width: 1024px) {
+    .sponsors div:nth-child(1) div {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.sponsors div div a {
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 1rem;
+    line-height: 27px;
+    font-weight: 400;
+    color: #0054b6;
+    text-decoration: underline;
+}
+
+.sponsors div ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+}
+
+.sponsors div li {
+    margin: 20 px;
+    width: 150px;
+}
+
+@media(min-width: 1024px) {
+    .section > div.sponsors-wrapper {
+        max-width:960px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media(min-width: 1200px) {
+    .section > div.sponsors-wrapper {
+        max-width:1024px
+    }
+}
+
+@media(min-width: 1360px) {
+    .section > div.sponsors-wrapper    {
+        max-width:1200px
+    }
+}
+
+.section > div.sponsors-wrapper h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.015em;
+    margin-bottom: 40px
+}
+
+@media(max-width: 1023px) {
+    .section > div.sponsors-wrapper h2  {
+        font-size:20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        max-width: 500px
+    }
+}
+
+@media(max-width: 1023px) {
+    .sponsors div div a {
+        margin-top:5px;
+        margin-left: 0;
+        display: block;
+    }
+}
